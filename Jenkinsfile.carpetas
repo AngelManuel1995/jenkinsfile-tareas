@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Incio tarea') {
+            steps {
+                echo "Incio de tarea"
+                sleep 1
+            }
+        }
+        stage('Creando tarea') {
+            steps {
+                sh 'mkdir Origin'
+                sh 'mkdir Copia'
+                sleep 1
+            }
+        }
+        stage('Tarea finalizada') {
+            steps {
+                sh 'Tarea finalizada'
+                sleep 1
+            }
+        }
+    }
+}
