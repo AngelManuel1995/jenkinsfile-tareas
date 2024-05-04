@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Tarea finalizada') {
             steps {
-                sh 'Tarea finalizada'
+                echo 'Tarea finalizada'
                 sleep 1
             }
         }
